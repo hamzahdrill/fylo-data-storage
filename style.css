@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --PaleBlue: hsl(243, 100%, 93%);
+--GrayishBlue: hsl(229, 7%, 55%);
+--DarkBlue: hsl(228, 56%, 26%);
+--VeryDarkBlue: hsl(229, 57%, 11%);
+--Gradient: hsl(6, 100%, 80%);
+ --Gradienta: hsl(335, 100%, 65%);
+}
+body{
+    background-color: var(--VeryDarkBlue);
+    background-image: url(./images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: 100% 50%;
+}
+.flex-container ul{
+    list-style: none;
+}
+.flex-container{
+    width: 900px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+.flex-itema{
+    border-radius: 10px 80px 10px 10px;
+    background-color: var(--DarkBlue);
+    height: 200px;
+    width: 340px;
+    padding: 2.5rem;
+}
+.flex-itemb{
+    width: 525px;
+    height: 140px;
+    margin-top: 60px;
+    background-color: var(--DarkBlue);
+    border-radius: 10px;
+    padding: 2.2rem;
+    color: var(--GrayishBlue);
+    position: relative;
+}
+#li-img{
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.select{
+    padding: 0.6rem;
+    background-color: var(--VeryDarkBlue);
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 7px;
+}
+.movement{
+    width: 435px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: var(--VeryDarkBlue);
+    opacity: 0.7;
+    margin-block: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.movementa{
+    height: 13px;
+    width: 335px;
+    border-radius: 15px;
+    background-color: var(--Gradient);
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 0.1rem;
+}
+.movementb{
+    height: 10px;
+    width: 13px;
+    border-radius: 100%;
+    background-color: var(--PaleBlue);
+    position: absolute;
+    right: 0.2%;
+}
+.used{
+    color: var(--PaleBlue);
+}
+#gb{
+    display: flex;
+    justify-content: space-between;
+    color: var(--PaleBlue);
+}
+#floater{
+    position: absolute;
+    top: -40%;
+    right: 8%;
+    height: 70px;
+    width: 160px;
+    background-color: var(--PaleBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px 10px 0px 10px;
+}
+#float{
+    color: var(--VeryDarkBlue);
+    font-weight: bold;
+    font-size: 2rem;
+}
+#float-p{
+    display: flex;
+    align-items: center;
+}
+@media(max-width: 930px){
+
+    .flex-container{
+        display: block;
+        position: relative;
+        
+    }
+}
